@@ -28,7 +28,8 @@ return (
       <p>คุณกดไปแล้ว: {count} ครั้ง</p>
       <button onClick={handleIncrement}>
         เพิ่มค่า +
-      </button>
+      </button><button onClick={handleDecrement}>
+ลดค่า      </button>
     </div>
   );
 }
