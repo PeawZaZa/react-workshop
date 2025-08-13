@@ -18,9 +18,11 @@ function Counter() {
     setCount(count + 1);
   };
 
-  // ... (ส่วนอื่นๆ เหมือนเดิม)
+  const handleDecrement = () => {
+    setCount(count - 1);
+  }
 
-  return (
+return (
     <div style={{ border: '1px solid #ccc', padding: '1rem', margin: '1rem' }}>
       <h3>ตัวนับเลข (พร้อม Effect)</h3>
       <p>คุณกดไปแล้ว: {count} ครั้ง</p>
@@ -30,5 +32,6 @@ function Counter() {
     </div>
   );
 }
+
 
 export default Counter;
